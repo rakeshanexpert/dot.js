@@ -1,0 +1,24 @@
+[{
+"image" : "item-1.png",
+"productHeading" : "Website Offer",
+"realPrice" : "90",
+"offerPrice" : "70"
+},
+{
+"image" : "item-2.png",
+"productHeading" : "Template Offer",
+"realPrice" : "100",
+"offerPrice" : "60"
+},
+{
+"image" : "item-3.png",
+"productHeading" : "Photoshop Offer",
+"realPrice" : "150",
+"offerPrice" : "120"
+},
+{
+"image" : "item-1.png",
+"productHeading" : "Wordpress Offer",
+"realPrice" : "130",
+"offerPrice" : "80"
+}]

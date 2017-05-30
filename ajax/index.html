@@ -1,0 +1,39 @@
+
+ <!doctype HTML>
+<html>
+<head>
+	<title>Aja Test</title>
+	<style>
+	#future-content{ border: 1px solid #CCC; margin: 30px; padding: 30px }
+	</style>
+</head>
+<body>
+	<h1>Default content</h1>
+	<button class="btn-ajax" data-target-url="partials/partial-1.html">Get Content 1</button>
+	<button class="btn-ajax" data-target-url="partials/partial-2.html">Get Content 2</button>
+	<button class="btn-ajax" data-target-url="partials/partial-3.html">Get Content 3</button>
+	<button class="btn-ajax" data-target-url="partials/partial-4.html">Get Content 4</button>
+	<button class="btn-ajax" data-target-url="partials/partial-5.html">Get Content 5</button>
+	<div id="future-content"></div>
+	
+	
+	
+	<script src="scripts/jquery-1.11.3.min.js"></script>
+	<script>
+		$(function(){
+			function getContent(){
+				var url = $(this).data("targetUrl");
+				$.ajax({  
+					url: url,
+					dataType: "html",
+					success: function(response){
+						$("#future-content").html(response);
+					}
+				});
+			}
+			
+			$(".btn-ajax").on("click", getContent);
+		});
+	</script>
+</body>
+</html>
